@@ -10,18 +10,21 @@
   position: relative;
   background-image: url("/astro.png");
   background-repeat: no-repeat;
-  animation: up 5s infinite alternate;
+  animation: up 8s ease-in-out infinite alternate;
 }
 
 @keyframes up {
-  from {
-    filter: grayscale(100%);
+  0% {
+    filter: grayscale(50%);
     background-position: 0 0;
     background-size: 100%;
   }
+  50% {
+    background-position: 0 -10px;
+  }
   to {
     filter: grayscale(0);
-    background-position: 0 8px;
-    background-size: 104%;
+    background-position: 0 0;
+    background-size: 106%;
   }
 }
