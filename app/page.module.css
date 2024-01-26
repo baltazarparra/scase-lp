@@ -10,7 +10,8 @@
   position: relative;
   background-image: url("/astro.png");
   background-repeat: no-repeat;
-  animation: up 6s ease-in-out infinite alternate;
+  background-size: cover;
+  animation: up 10s ease-in-out infinite alternate;
 }
 
 @keyframes up {
@@ -19,7 +20,7 @@
     background-position: 0 0;
   }
   50% {
-    background-position: 0 -10px;
+    background-position: 0 -18px;
   }
   to {
     filter: grayscale(0);
