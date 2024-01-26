@@ -9,15 +9,19 @@
   line-height: 2;
   position: relative;
   background-image: url("/astro.png");
-  background-size: cover;
-  animation: up 2s alternate infinite;
+  background-repeat: no-repeat;
+  animation: up 5s infinite alternate;
 }
 
 @keyframes up {
   from {
     filter: grayscale(100%);
+    background-position: 0 0;
+    background-size: 100%;
   }
   to {
     filter: grayscale(0);
+    background-position: 0 8px;
+    background-size: 104%;
   }
 }
