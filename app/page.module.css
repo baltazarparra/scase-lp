@@ -8,4 +8,16 @@
   text-align: center;
   line-height: 2;
   position: relative;
+  background-image: url("/astro.png");
+  background-size: cover;
+  animation: up 2s alternate infinite;
+}
+
+@keyframes up {
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    filter: grayscale(0);
+  }
 }
